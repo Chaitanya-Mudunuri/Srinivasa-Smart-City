@@ -59,7 +59,7 @@ export default function DocumentVault({ documents, unlocked }: DocumentVaultProp
         return (
           <div
             key={doc.id}
-            className="bg-slate-950/80 border border-slate-800/80 p-6 rounded-2xl flex items-center justify-between gap-4 transition-all hover:border-amber-500/40"
+            className="bg-slate-950/80 border border-slate-800/80 p-4 sm:p-6 rounded-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 transition-all hover:border-amber-500/40 overflow-hidden"
           >
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 shrink-0 mt-1">

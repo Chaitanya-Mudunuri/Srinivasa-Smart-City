@@ -52,15 +52,15 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
 
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-amber-300 flex items-center justify-center text-slate-950 font-bold shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform">
+          <Link href="/" className="flex items-center gap-2.5 group max-w-[70%] sm:max-w-none">
+            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-amber-300 flex items-center justify-center text-slate-950 font-bold shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform shrink-0">
               <Building2 className="w-5 h-5" />
             </div>
-            <div>
-              <span className="font-outfit font-bold text-lg text-white tracking-wide block leading-tight group-hover:text-amber-400 transition-colors">
+            <div className="min-w-0">
+              <span className="font-outfit font-bold text-sm sm:text-lg text-white tracking-wide truncate block leading-tight group-hover:text-amber-400 transition-colors">
                 Sri Srinivasa <span className="text-amber-400">Smart City</span>
               </span>
-              <span className="text-[10px] text-slate-400 tracking-wider uppercase">Jaggampeta • AP-RERA</span>
+              <span className="text-[9px] sm:text-[10px] text-slate-400 tracking-wider uppercase block truncate">Jaggampeta • AP-RERA</span>
             </div>
           </Link>
 
