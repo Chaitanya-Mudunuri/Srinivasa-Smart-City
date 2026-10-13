@@ -101,11 +101,12 @@ export default function DocumentVault({ documents, unlocked }: DocumentVaultProp
                     download={doc.filename}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-amber-500 hover:bg-amber-400 text-slate-950 px-4 py-2.5 sm:p-3 rounded-xl transition-all shadow-md shadow-amber-500/20 shrink-0 flex items-center justify-center gap-2 sm:gap-0 text-xs font-bold sm:font-normal w-full sm:w-auto"
+                    className="bg-amber-500 hover:bg-amber-400 text-slate-950 px-4 py-2.5 sm:p-3 rounded-xl transition-all shadow-md shadow-amber-500/20 shrink-0 flex items-center justify-center gap-2 text-xs font-bold w-full sm:w-auto"
                     title="Download PDF"
                   >
                     <Download className="w-4 h-4" />
-                    <span className="inline sm:hidden">Download Document</span>
+                    <span className="sm:hidden">Download</span>
+                    <span className="hidden sm:inline">Download Document</span>
                   </a>
                 )
               ) : (
