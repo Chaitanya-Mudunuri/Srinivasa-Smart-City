@@ -45,22 +45,22 @@ export default function Navbar() {
   ];
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-55 transition-all duration-300 ${
-      isScrolled ? "bg-slate-950/90 backdrop-blur-md border-b border-slate-800 shadow-xl py-3" : "bg-transparent py-5"
+    <header className={`fixed top-0 left-0 right-0 z-55 transition-all duration-300 w-full overflow-x-hidden ${
+      isScrolled ? "bg-slate-950/95 backdrop-blur-md border-b border-slate-800 shadow-xl py-2.5 sm:py-3" : "bg-transparent py-4 sm:py-5"
     }`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 w-full">
         <div className="flex items-center justify-between">
 
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5 group max-w-[70%] sm:max-w-none">
-            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-amber-300 flex items-center justify-center text-slate-950 font-bold shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform shrink-0">
-              <Building2 className="w-5 h-5" />
+          <Link href="/" className="flex items-center gap-2 sm:gap-3 group max-w-[72%] sm:max-w-none">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-amber-300 flex items-center justify-center text-slate-950 font-bold shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform shrink-0">
+              <Building2 className="w-4 h-4 sm:w-5 sm:h-5" />
             </div>
             <div className="min-w-0">
-              <span className="font-outfit font-bold text-sm sm:text-lg text-white tracking-wide truncate block leading-tight group-hover:text-amber-400 transition-colors">
+              <span className="font-outfit font-bold text-xs sm:text-lg text-white tracking-wide truncate block leading-tight group-hover:text-amber-400 transition-colors">
                 Sri Srinivasa <span className="text-amber-400">Smart City</span>
               </span>
-              <span className="text-[9px] sm:text-[10px] text-slate-400 tracking-wider uppercase block truncate">Jaggampeta • AP-RERA</span>
+              <span className="text-[8px] sm:text-[10px] text-slate-400 tracking-wider uppercase block truncate">Jaggampeta • AP-RERA</span>
             </div>
           </Link>
 

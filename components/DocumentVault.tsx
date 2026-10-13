@@ -59,22 +59,22 @@ export default function DocumentVault({ documents, unlocked }: DocumentVaultProp
         return (
           <div
             key={doc.id}
-            className="bg-slate-950/80 border border-slate-800/80 p-4 sm:p-6 rounded-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 transition-all hover:border-amber-500/40 overflow-hidden"
+            className="bg-slate-950/80 border border-slate-800/80 p-4 sm:p-6 rounded-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 transition-all hover:border-amber-500/40 w-full overflow-hidden"
           >
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 shrink-0 mt-1">
-                <FileText className="w-6 h-6" />
+            <div className="flex items-start gap-3 sm:gap-4 w-full sm:w-auto overflow-hidden">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 shrink-0 mt-1">
+                <FileText className="w-5 h-5 sm:w-6 sm:h-6" />
               </div>
-              <div>
-                <span className="text-[10px] text-amber-400 font-semibold uppercase tracking-wider">
+              <div className="min-w-0 flex-1">
+                <span className="text-[10px] text-amber-400 font-semibold uppercase tracking-wider block">
                   {doc.category}
                 </span>
-                <h3 className="text-base font-outfit font-bold text-white mb-1">
+                <h3 className="text-sm sm:text-base font-outfit font-bold text-white mb-1 truncate">
                   {doc.title}
                 </h3>
-                <p className="text-xs text-slate-400 line-clamp-1">{doc.description}</p>
-                <div className="flex items-center gap-2 mt-2">
-                  <span className="text-[10px] text-slate-500 font-mono bg-slate-900 px-2 py-0.5 rounded border border-slate-800">
+                <p className="text-xs text-slate-400 line-clamp-2 sm:line-clamp-1">{doc.description}</p>
+                <div className="flex flex-wrap items-center gap-2 mt-2">
+                  <span className="text-[10px] text-slate-500 font-mono bg-slate-900 px-2 py-0.5 rounded border border-slate-800 truncate max-w-[180px]">
                     {doc.filename}
                   </span>
                   <span className="text-[10px] text-amber-400/90 font-mono flex items-center gap-1">
@@ -84,33 +84,37 @@ export default function DocumentVault({ documents, unlocked }: DocumentVaultProp
               </div>
             </div>
 
-            {canAccess ? (
-              isBrochure ? (
-                <a
-                  href={doc.path}
-                  className="bg-amber-500 hover:bg-amber-400 text-slate-950 px-4 py-3 rounded-xl transition-all shadow-md shadow-amber-500/20 shrink-0 flex items-center gap-2 text-xs font-bold"
-                  title="Open Digital Brochure"
-                >
-                  <ExternalLink className="w-4 h-4" />
-                  <span>View Brochure</span>
-                </a>
+            <div className="w-full sm:w-auto flex justify-end pt-2 sm:pt-0 border-t sm:border-t-0 border-slate-800/60">
+              {canAccess ? (
+                isBrochure ? (
+                  <a
+                    href={doc.path}
+                    className="bg-amber-500 hover:bg-amber-400 text-slate-950 px-4 py-2.5 sm:py-3 rounded-xl transition-all shadow-md shadow-amber-500/20 shrink-0 flex items-center justify-center gap-2 text-xs font-bold w-full sm:w-auto"
+                    title="Open Digital Brochure"
+                  >
+                    <ExternalLink className="w-4 h-4" />
+                    <span>View Brochure</span>
+                  </a>
+                ) : (
+                  <a
+                    href={doc.path}
+                    download={doc.filename}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-amber-500 hover:bg-amber-400 text-slate-950 px-4 py-2.5 sm:p-3 rounded-xl transition-all shadow-md shadow-amber-500/20 shrink-0 flex items-center justify-center gap-2 sm:gap-0 text-xs font-bold sm:font-normal w-full sm:w-auto"
+                    title="Download PDF"
+                  >
+                    <Download className="w-4 h-4" />
+                    <span className="inline sm:hidden">Download Document</span>
+                  </a>
+                )
               ) : (
-                <a
-                  href={doc.path}
-                  download={doc.filename}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-amber-500 hover:bg-amber-400 text-slate-950 p-3 rounded-xl transition-all shadow-md shadow-amber-500/20 shrink-0 flex items-center justify-center"
-                  title="Download PDF"
-                >
-                  <Download className="w-4 h-4" />
-                </a>
-              )
-            ) : (
-              <div className="bg-slate-900 border border-slate-800 p-3 rounded-xl text-slate-600 shrink-0 cursor-not-allowed" title="Unlock vault to view/download">
-                <Download className="w-4 h-4 opacity-40" />
-              </div>
-            )}
+                <div className="bg-slate-900 border border-slate-800 px-4 py-2.5 sm:p-3 rounded-xl text-slate-600 shrink-0 cursor-not-allowed flex items-center justify-center gap-2 w-full sm:w-auto" title="Unlock vault to view/download">
+                  <Download className="w-4 h-4 opacity-40" />
+                  <span className="text-xs inline sm:hidden text-slate-500">Locked Vault</span>
+                </div>
+              )}
+            </div>
           </div>
         );
       })}
