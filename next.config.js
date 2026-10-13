@@ -5,8 +5,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH || "",
-  basePath: process.env.NEXT_PUBLIC_BASE_PATH || "",
+  // Since you are using a custom domain (srinivasa.smartcity.mudunuri.co.in) at root root level,
+  // basePath and assetPrefix should be empty.
 };
 
 module.exports = nextConfig;
