@@ -1,0 +1,38 @@
+[
+  {
+    "id": "doc-brochure",
+    "title": "Official Project Brochure & Overview",
+    "description": "Complete interactive digital brochure covering layout specifications, infrastructure standards, developer details, and pricing highlights.",
+    "category": "Brochure",
+    "filename": "brochure.html",
+    "path": "/brochure/",
+    "requiresVault": true
+  },
+  {
+    "id": "doc-layout",
+    "title": "Master Layout Plan (DTCP Approved)",
+    "description": "High-resolution master layout plan showing road networks, park spaces, and plot orientations in Jaggampeta.",
+    "category": "Layout Plan",
+    "filename": "11040041LPGUDA2020-plan.PDF",
+    "path": "/documents/11040041LPGUDA2020-plan.PDF",
+    "requiresVault": true
+  },
+  {
+    "id": "doc-rera-1",
+    "title": "AP-RERA Certificate - Sri Srinivasa Smart City",
+    "description": "Official AP-RERA registration certificate (Registration ID: P04180171449).",
+    "category": "RERA Certificate",
+    "filename": "071220101717-rera.pdf",
+    "path": "/documents/071220101717-rera.pdf",
+    "requiresVault": false
+  },
+  {
+    "id": "doc-rera-2",
+    "title": "AP-RERA Certificate - Sri Venkateswara Smart City",
+    "description": "Official AP-RERA registration certificate for Phase 1 (~2.35 acres, Registration ID: P04180173203).",
+    "category": "RERA Certificate",
+    "filename": "010822124928-rera.pdf",
+    "path": "/documents/010822124928-rera.pdf",
+    "requiresVault": false
+  }
+]

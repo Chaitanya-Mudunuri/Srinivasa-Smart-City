@@ -1,0 +1,42 @@
+{
+  "projectName": "Sri Srinivasa Smart City",
+  "tagline": "Premium Plotted Layouts in Jaggampeta, East Godavari District",
+  "developers": [
+    "Mudunuri Seetharamaraju",
+    "Mudunuri MuraliKrishnamRaju"
+  ],
+  "location": {
+    "mandal": "Jaggampeta",
+    "district": "East Godavari / Kakinada",
+    "state": "Andhra Pradesh",
+    "pincode": "533435"
+  },
+  "rera": [
+    {
+      "id": "P04180171449",
+      "name": "Sri Srinivasa Smart City",
+      "portalUrl": "https://rera.ap.gov.in"
+    },
+    {
+      "id": "P04180173203",
+      "name": "Sri Venkateswara Smart City (Phase 1, ~2.35 acres)",
+      "portalUrl": "https://rera.ap.gov.in"
+    }
+  ],
+  "contact": {
+    "phone": "+91 8790189498",
+    "phoneDisplay": "+91 87901 89498",
+    "whatsapp": "+918790189498",
+    "whatsappUrl": "https://wa.me/918790189498?text=Hi%2C%20I%20am%20interested%20in%20plots%20at%20Sri%20Srinivasa%20Smart%20City",
+    "email": "satyaramaraju1234@gmail.com",
+    "address": "Jaggampeta, East Godavari District, Andhra Pradesh - 533435"
+  },
+  "infrastructure": {
+    "roads": "30 ft and 40 ft bitumen / CC internal roads",
+    "drainage": "Underground storm water drainage system",
+    "electricity": "Provisions for 3-phase power supply and street lighting",
+    "parks": "Dedicated open spaces, children's play areas, and avenue plantation per DTCP norms"
+  },
+  "web3formsKey": "YOUR_WEB3FORMS_ACCESS_KEY",
+  "siteUrl": "https://srisrinivasasmartcity.com"
+}

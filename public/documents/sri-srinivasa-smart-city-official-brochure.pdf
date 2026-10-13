@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Srinivasa Smart City - Official Project Brochure</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@500;700;800&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #030712;
+            color: #f3f4f6;
+            margin: 0;
+            padding: 40px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #090d16;
+            border: 1px solid #1e293b;
+            border-radius: 24px;
+            padding: 50px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+        }
+        .header {
+            text-align: center;
+            border-bottom: 1px solid #1e293b;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(245, 158, 11, 0.1);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            color: #f59e0b;
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 15px;
+        }
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 36px;
+            font-weight: 800;
+            color: #ffffff;
+            margin: 0 0 10px 0;
+        }
+        .subtitle {
+            color: #94a3b8;
+            font-size: 16px;
+        }
+        .section-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: #f59e0b;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-left: 4px solid #f59e0b;
+            padding-left: 12px;
+        }
+        p, li {
+            color: #cbd5e1;
+            font-size: 14px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .card {
+            background: #0f172a;
+            border: 1px solid #1e293b;
+            padding: 20px;
+            border-radius: 16px;
+        }
+        .card h4 {
+            margin: 0 0 8px 0;
+            font-family: 'Outfit', sans-serif;
+            color: #ffffff;
+            font-size: 16px;
+        }
+        .footer {
+            margin-top: 40px;
+            border-top: 1px solid #1e293b;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="badge">Official Digital Brochure</span>
+            <h1>Sri Srinivasa Smart City</h1>
+            <div class="subtitle">Premium Plotted Layouts in Jaggampeta, East Godavari District, AP</div>
+        </div>
+
+        <div class="section-title">Developers & Promoters</div>
+        <p>Developed with absolute transparency and clear titles by <strong>Mudunuri Seetharamaraju</strong> and <strong>Mudunuri MuraliKrishnamRaju</strong>.</p>
+
+        <div class="section-title">AP-RERA Compliance & Approvals</div>
+        <div class="grid">
+            <div class="card">
+                <h4>Sri Srinivasa Smart City</h4>
+                <p><strong>RERA ID:</strong> P04180171449</p>
+                <p>Approved DTCP layout with clear legal title and immediate registration.</p>
+            </div>
+            <div class="card">
+                <h4>Sri Venkateswara Smart City</h4>
+                <p><strong>RERA ID:</strong> P04180173203</p>
+                <p>Phase 1 (~2.35 acres) premier plotted development.</p>
+            </div>
+        </div>
+
+        <div class="section-title">World-Class Infrastructure Standards</div>
+        <ul>
+            <li><strong>Internal Roads:</strong> Spacious 30 ft and 40 ft bitumen / CC all-weather internal roads.</li>
+            <li><strong>Drainage System:</strong> Advanced underground storm water drainage network.</li>
+            <li><strong>Electrical & Lighting:</strong> Provisions for 3-phase power supply and street lighting across avenues.</li>
+            <li><strong>Parks & Greenery:</strong> Dedicated children's play areas, open recreational spaces, and avenue plantation per DTCP norms.</li>
+        </ul>
+
+        <div class="section-title">Prime Strategic Location</div>
+        <p>Located in the fast-growing economic corridor of Jaggampeta, offering seamless connectivity to Kakinada, Rajahmundry, and NH-16. Ideal for immediate construction and high-yield real estate appreciation.</p>
+
+        <div class="section-title">Contact & Site Visits</div>
+        <p><strong>Phone / WhatsApp:</strong> +91 87901 89498<br>
+           <strong>Email:</strong> satyaramaraju1234@gmail.com<br>
+           <strong>Location:</strong> Jaggampeta, East Godavari District, Andhra Pradesh - 533435</p>
+
+        <div class="footer">
+            &copy; 2026 Sri Srinivasa Smart City. All rights reserved. Official Project Brochure.
+        </div>
+    </div>
+</body>
+</html>
