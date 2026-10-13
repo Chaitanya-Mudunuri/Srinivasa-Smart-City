@@ -205,9 +205,9 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb) }}
         />
       </head>
-      <body className="font-sans bg-slate-950 text-slate-100 antialiased selection:bg-amber-500 selection:text-slate-950 overflow-x-hidden">
+      <body className="font-sans bg-slate-950 text-slate-100 antialiased selection:bg-amber-500 selection:text-slate-950 overflow-x-clip">
         <Navbar />
-        <main className="min-h-screen pt-20 sm:pt-24 overflow-x-hidden">{children}</main>
+        <main className="min-h-screen overflow-x-clip">{children}</main>
         <Footer />
         <WhatsAppWidget />
       </body>

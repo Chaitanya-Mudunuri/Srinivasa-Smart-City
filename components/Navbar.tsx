@@ -34,6 +34,10 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [pathname]);
+
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "The Project", href: "/project" },
@@ -45,19 +49,19 @@ export default function Navbar() {
   ];
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full overflow-x-hidden ${
-      isScrolled ? "bg-slate-950/98 backdrop-blur-md border-b border-slate-800 shadow-xl py-3" : "bg-slate-950/95 backdrop-blur-sm py-4 border-b border-slate-800/40"
+    <header className={`sticky top-0 z-50 transition-all duration-300 w-full ${
+      isScrolled ? "bg-slate-950/98 backdrop-blur-md border-b border-slate-800 shadow-xl py-2.5" : "bg-slate-950/95 backdrop-blur-sm py-3 border-b border-slate-800/40"
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-4 xl:gap-8">
 
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 sm:gap-3 group max-w-[78%] sm:max-w-none">
-            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-amber-300 flex items-center justify-center text-slate-950 font-bold shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform shrink-0">
-              <Building2 className="w-5 h-5" />
+          {/* Logo / Business Name */}
+          <Link href="/" className="flex items-center gap-2.5 sm:gap-3 group shrink-0">
+            <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-gradient-to-tr from-amber-500 to-amber-300 flex items-center justify-center text-slate-950 font-bold shadow-md shadow-amber-500/20 group-hover:scale-105 transition-transform shrink-0">
+              <Building2 className="w-4 h-4 sm:w-5 sm:h-5" />
             </div>
             <div className="min-w-0">
-              <span className="font-outfit font-bold text-sm sm:text-lg text-white tracking-wide truncate block leading-tight group-hover:text-amber-400 transition-colors">
+              <span className="font-outfit font-bold text-sm sm:text-base xl:text-lg text-white tracking-wide truncate block leading-tight group-hover:text-amber-400 transition-colors">
                 Sri Srinivasa <span className="text-amber-400">Smart City</span>
               </span>
               <span className="text-[9px] sm:text-[10px] text-slate-400 tracking-wider uppercase block truncate">Jaggampeta • AP-RERA</span>
@@ -65,16 +69,16 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Nav Links */}
-          <nav className="hidden lg:flex items-center gap-1 bg-slate-900/60 border border-slate-800/80 px-3 py-1.5 rounded-full backdrop-blur-sm">
+          <nav className="hidden lg:flex items-center gap-0.5 xl:gap-1 bg-slate-900/60 border border-slate-800/80 px-2 py-1 xl:px-3 xl:py-1.5 rounded-full backdrop-blur-sm shrink-0">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
               return (
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                  className={`px-2.5 xl:px-3.5 py-1.5 rounded-full text-xs xl:text-sm font-medium transition-all ${
                     isActive
-                      ? "bg-amber-500 text-slate-950 shadow-md shadow-amber-500/30"
+                      ? "bg-amber-500 text-slate-950 shadow-md shadow-amber-500/30 font-semibold"
                       : "text-slate-300 hover:text-white hover:bg-slate-800/60"
                   }`}
                 >
@@ -85,20 +89,20 @@ export default function Navbar() {
           </nav>
 
           {/* Contact & CTA */}
-          <div className="hidden lg:flex items-center gap-3">
+          <div className="hidden lg:flex items-center gap-2 xl:gap-3 shrink-0">
             <a
               href={`tel:${siteData.contact.phone}`}
-              className="flex items-center gap-2 text-xs font-medium text-slate-300 bg-slate-900 border border-slate-800 hover:border-amber-500/50 px-3.5 py-2 rounded-xl transition-all"
+              className="flex items-center gap-1.5 xl:gap-2 text-xs font-medium text-slate-300 bg-slate-900 border border-slate-800 hover:border-amber-500/50 px-2.5 py-1.5 xl:px-3.5 xl:py-2 rounded-xl transition-all"
             >
-              <Phone className="w-3.5 h-3.5 text-amber-400" />
-              <span>{siteData.contact.phoneDisplay}</span>
+              <Phone className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+              <span className="whitespace-nowrap">{siteData.contact.phoneDisplay}</span>
             </a>
             <Link
               href="/contact"
-              className="flex items-center gap-2 bg-gradient-to-r from-amber-500 to-amber-400 hover:from-amber-400 hover:to-amber-300 text-slate-950 font-semibold px-4 py-2 rounded-xl text-sm shadow-lg shadow-amber-500/20 hover:scale-[1.02] active:scale-[0.98] transition-all"
+              className="flex items-center gap-1.5 xl:gap-2 bg-gradient-to-r from-amber-500 to-amber-400 hover:from-amber-400 hover:to-amber-300 text-slate-950 font-semibold px-3.5 py-1.5 xl:px-4 xl:py-2 rounded-xl text-xs xl:text-sm shadow-md shadow-amber-500/20 hover:scale-[1.02] active:scale-[0.98] transition-all whitespace-nowrap"
             >
               <span>Site Visit</span>
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="w-3.5 h-3.5 xl:w-4 xl:h-4" />
             </Link>
           </div>
 
@@ -106,7 +110,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden relative z-50 text-amber-400 hover:text-white p-2.5 rounded-xl bg-slate-900 border border-slate-800 hover:border-amber-500/50 focus:outline-none shrink-0 shadow-md transition-all"
+            className="lg:hidden relative z-50 text-amber-400 hover:text-white p-2 rounded-xl bg-slate-900 border border-slate-800 hover:border-amber-500/50 focus:outline-none shrink-0 shadow-md transition-all"
             aria-label="Toggle menu"
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -114,9 +118,9 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu Overlay & Dropdown */}
+      {/* Mobile Menu in normal document flow - moves page content down when expanded */}
       {mobileMenuOpen && (
-        <div className="lg:hidden absolute top-full left-0 right-0 bg-slate-950/98 backdrop-blur-2xl border-b border-slate-800 px-5 py-6 shadow-2xl transition-all duration-300">
+        <div className="lg:hidden w-full border-t border-slate-800/80 px-5 pt-4 pb-6 transition-all duration-300">
           <div className="flex flex-col gap-2.5">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
