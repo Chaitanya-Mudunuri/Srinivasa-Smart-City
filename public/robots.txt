@@ -2,3 +2,4 @@ User-Agent: *
 Allow: /
 
 Sitemap: https://srisrinivasasmartcity.com/sitemap.xml
+Sitemap: https://srisrinivasasmartcity.com/subdomains-sitemap.xml
