@@ -71,7 +71,9 @@ export default function Navbar() {
           {/* Desktop Nav Links */}
           <nav className="hidden lg:flex items-center gap-0.5 xl:gap-1 bg-slate-900/60 border border-slate-800/80 px-2 py-1 xl:px-3 xl:py-1.5 rounded-full backdrop-blur-sm shrink-0">
             {navLinks.map((link) => {
-              const isActive = pathname === link.href;
+              const cleanPath = pathname?.replace(/\/$/, "") || "";
+              const cleanHref = link.href.replace(/\/$/, "");
+              const isActive = cleanPath === cleanHref;
               return (
                 <Link
                   key={link.name}
@@ -123,7 +125,9 @@ export default function Navbar() {
         <div className="lg:hidden w-full border-t border-slate-800/80 px-5 pt-4 pb-6 transition-all duration-300">
           <div className="flex flex-col gap-2.5">
             {navLinks.map((link) => {
-              const isActive = pathname === link.href;
+              const cleanPath = pathname?.replace(/\/$/, "") || "";
+              const cleanHref = link.href.replace(/\/$/, "");
+              const isActive = cleanPath === cleanHref;
               return (
                 <Link
                   key={link.name}
