@@ -80,7 +80,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Col 3: Developers & RERA */}
+          {/* Col 3: Promoters & RERA */}
           <div>
             <h3 className="text-white font-outfit font-semibold text-base mb-4 tracking-wide">Promoters & RERA</h3>
             <ul className="space-y-3 text-sm">
@@ -107,7 +107,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Col 4: Contact Info */}
+          {/* Col 4: Contact Office */}
           <div>
             <h3 className="text-white font-outfit font-semibold text-base mb-4 tracking-wide">Contact Office</h3>
             <ul className="space-y-3 text-sm">
@@ -134,9 +134,18 @@ export default function Footer() {
 
         {/* Bottom Disclaimer & Copyright */}
         <div className="pt-8 border-t border-slate-900 text-xs text-slate-500 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-center md:text-left">
-            © {new Date().getFullYear()} Sri Srinivasa Smart City. Developed by Mudunuri Seetharamaraju & Mudunuri MuraliKrishnamRaju. All rights reserved.
-          </p>
+          <div className="flex flex-col md:flex-row items-center gap-4 text-center md:text-left">
+            <p>
+              © {new Date().getFullYear()} Sri Srinivasa Smart City. Developed by Mudunuri Seetharamaraju & Mudunuri MuraliKrishnamRaju. All rights reserved.
+            </p>
+            <div className="flex items-center gap-3 text-slate-400 flex-wrap justify-center">
+              <Link href="/privacy" className="hover:text-amber-400 transition-colors">Privacy Policy</Link>
+              <span>•</span>
+              <Link href="/terms" className="hover:text-amber-400 transition-colors">Terms of Service</Link>
+              <span>•</span>
+              <Link href="/copyright" className="hover:text-amber-400 transition-colors">Copyright & Disclaimer</Link>
+            </div>
+          </div>
           <p className="text-center md:text-right max-w-xl text-[11px] leading-relaxed text-slate-600">
             Disclaimer: This website is for informational purposes only and does not constitute a legal offering. Master plans, specifications, and pricing are subject to change without prior notice. AP-RERA registration details can be verified directly at rera.ap.gov.in.
           </p>
