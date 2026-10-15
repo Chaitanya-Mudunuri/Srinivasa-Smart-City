@@ -22,14 +22,14 @@ export const metadata: Metadata = {
   description: "Official real estate portal for Sri Srinivasa Smart City in Jaggampeta, East Godavari District, AP. Developed by Mudunuri Seetharamaraju & Mudunuri MuraliKrishnamRaju. AP-RERA Approved.",
   keywords: ["plots in jaggampeta", "sri srinivasa smart city", "east godavari plots", "ap rera approved plots", "mudunuri seetharamaraju", "mudunuri muralikrishnamraju", "plots near kakinada", "plots near rajahmundry", "dtcp approved layouts"],
   authors: [{ name: "Mudunuri Seetharamaraju" }, { name: "Mudunuri MuraliKrishnamRaju" }],
-  metadataBase: new URL("https://srisrinivasasmartcity.com"),
+  metadataBase: new URL("https://srinivasa.smartcity.mudunuri.co.in"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "Sri Srinivasa Smart City | Premium Plotted Layouts in Jaggampeta",
     description: "AP-RERA Approved premium plotted community in Jaggampeta, East Godavari District. Secure your family's future today.",
-    url: "https://srisrinivasasmartcity.com",
+    url: "https://srinivasa.smartcity.mudunuri.co.in",
     siteName: "Sri Srinivasa Smart City",
     type: "website",
     locale: "en_IN",
@@ -58,8 +58,8 @@ export default function RootLayout({
     "name": "Sri Srinivasa Smart City",
     "alternateName": ["Sri Venkateswara Smart City", "Srinivasa Smart City Jaggampeta"],
     "description": "AP-RERA Approved premium plotted community in Jaggampeta, East Godavari District, Andhra Pradesh. Developed with elite infrastructure by Mudunuri Seetharamaraju & Mudunuri MuraliKrishnamRaju.",
-    "url": "https://srisrinivasasmartcity.com",
-    "image": "https://srisrinivasasmartcity.com/images/hero.jpg",
+    "url": "https://srinivasa.smartcity.mudunuri.co.in",
+    "image": "https://srinivasa.smartcity.mudunuri.co.in/images/hero.jpg",
     "identifier": [
       {
         "@type": "PropertyValue",
@@ -123,9 +123,9 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
     "name": "Sri Srinivasa Smart City Sales Office",
-    "image": "https://srisrinivasasmartcity.com/images/hero.jpg",
-    "@id": "https://srisrinivasasmartcity.com",
-    "url": "https://srisrinivasasmartcity.com",
+    "image": "https://srinivasa.smartcity.mudunuri.co.in/images/hero.jpg",
+    "@id": "https://srinivasa.smartcity.mudunuri.co.in",
+    "url": "https://srinivasa.smartcity.mudunuri.co.in",
     "telephone": "+918790189498",
     "email": "satyaramaraju1234@gmail.com",
     "address": {
@@ -166,25 +166,25 @@ export default function RootLayout({
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://srisrinivasasmartcity.com/"
+        "item": "https://srinivasa.smartcity.mudunuri.co.in/"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Project Master Plan",
-        "item": "https://srisrinivasasmartcity.com/project/"
+        "item": "https://srinivasa.smartcity.mudunuri.co.in/project/"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Location & Connectivity",
-        "item": "https://srisrinivasasmartcity.com/location/"
+        "item": "https://srinivasa.smartcity.mudunuri.co.in/location/"
       },
       {
         "@type": "ListItem",
         "position": 4,
         "name": "Contact & Site Visit",
-        "item": "https://srisrinivasasmartcity.com/contact/"
+        "item": "https://srinivasa.smartcity.mudunuri.co.in/contact/"
       }
     ]
   };
