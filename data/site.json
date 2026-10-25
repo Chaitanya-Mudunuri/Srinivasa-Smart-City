@@ -19,7 +19,7 @@
     },
     {
       "id": "P04180173203",
-      "name": "Sri Venkateswara Smart City (Phase 1, ~2.35 acres)",
+      "name": "Sri Venkateswara Smart City",
       "portalUrl": "https://rera.ap.gov.in"
     }
   ],
@@ -32,7 +32,7 @@
     "address": "Jaggampeta, East Godavari District, Andhra Pradesh - 533435"
   },
   "infrastructure": {
-    "roads": "30 ft and 40 ft bitumen / CC internal roads",
+    "roads": "40 ft bitumen / CC internal roads",
     "drainage": "Underground storm water drainage system",
     "electricity": "Provisions for 3-phase power supply and street lighting",
     "parks": "Dedicated open spaces, children's play areas, and avenue plantation per DTCP norms"
